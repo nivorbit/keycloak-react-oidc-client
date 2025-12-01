@@ -47,7 +47,7 @@ export default function ProtectedLayout({ children }: { children: React.ReactNod
             Dashboard
           </Link>
           <Link href="/profile" className={location === "/profile" ? "text-foreground" : "text-muted-foreground hover:text-foreground transition-colors"}>
-            Profile & Claims
+            Profile
           </Link>
         </nav>
         <Sheet>

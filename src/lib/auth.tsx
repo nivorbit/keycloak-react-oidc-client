@@ -4,8 +4,8 @@ import { User } from "oidc-client-ts";
 
 const oidcConfig: AuthProviderProps = {
   authority: "http://localhost:8180/realms/nivorbit",
-  client_id: "public-client",
-  redirect_uri:  "http://127.0.0.1:5001/dashboard",
+  client_id: "public",
+  redirect_uri: window.location.origin + "/dashboard",
   onSigninCallback: () => {
     window.history.replaceState({}, document.title, window.location.pathname);
   },
